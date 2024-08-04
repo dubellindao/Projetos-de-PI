@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFRN - Home</title>
+    <style>
+        body {
+            font-family: Arial, Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header{
+            font-size:medium;
+            background-color: #40d110;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        footer {
+            background-color: #40d110;
+            color: white;
+            text-align: left;
+            font-size: small;
+            padding: 11px;
+            margin-top: 9%;
+        }
+        main {
+            text-align: center;
+            padding: 2em;
+            background-color: white;
+            margin: 2em auto;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 1em 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #16c571;
+            font-size: 1.2em;
+        }
+        nav ul li a:hover {
+            text-decoration:overline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cursos do Instituto Federal do Rio Grande do Norte (Campus Pau dos Ferros) - IFRN</h1>
+    </header>
+    <main>
+        <h2>📚Seja bem-vindo à página de cursos do IFRN!📚</h2>
+        <p>Selecione um dos cursos abaixo para obter mais informações sobre ele:</p>
+        <nav>
+            <ul>
+                <li>🍏<a href="{% url 'alimentos' %}">Curso de Alimentos🍏</a></li>
+                <li>⚗️<a href="{% url 'quimica' %}">Curso de Química⚗️</a></li>
+                <li>💻<a href="{% url 'ads' %}">Curso de Análise e Desenvolvimento de Sistemas💻</a></li>
+            </ul>
+        </nav>
+    </main>
+    <footer>
+        <p>© 2024 IFRN. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

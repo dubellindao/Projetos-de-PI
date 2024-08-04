@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentos - IFRN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #d24747;
+            color: #fff;
+            padding: 1rem 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: #575757;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        main {
+            padding: 2rem;
+            background: #fff;
+            margin: 2rem 0 0 2rem;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        main h2 {
+            color: #333;
+        }
+        footer {
+            background: #d24747;
+            color: white;
+            text-align: left;
+            font-size: small;
+            padding: 11px;
+            margin-top: 6%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curso de Alimentos🍏</h1>
+        <nav>
+            <a href="{% url 'index' %}">Voltar para a página principal</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Sobre o curso:</h2>
+        <p>O Curso Técnico Integrado em Alimentos forma profissionais que atuam no processamento e conservação de matérias-primas, produtos e subprodutos da indústria alimentícia e de bebidas, realizando análises físico-químicas, microbiológicas e sensoriais; auxiliam no planejamento, coordenação e controle de atividades do setor; realizam a sanitização das indústrias alimentícias e de bebidas; controlam e corrigem desvios nos processos manuais e automatizados; acompanham a manutenção de equipamentos; participam do desenvolvimento de novos produtos e processos. 
+            Possibilidades de atuação:  Indústrias de alimentos e bebidas;  Entrepostos de armazenamento e beneficiamento;  Laboratórios, institutos de pesquisa e consultoria;  Órgãos de fiscalização sanitária e proteção ao consumidor;  Indústria de insumos para processos e produtos.</p>
+    </main>
+    <footer>
+        <p>© 2024 IFRN. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

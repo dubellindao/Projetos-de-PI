@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de ADS - IFRN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: #575757;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        main {
+            padding: 2rem;
+            background: #fff;
+            margin: 2rem 0 0 2rem;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        main h2 {
+            color: #333;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: left;
+            font-size: small;
+            padding: 11px;
+            margin-top: 10%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curso de Análise e Desenvolvimento de Sistemas💻</h1>
+            <nav>
+                <a href="{% url 'index' %}">Voltar para a página principal</a>
+            </nav>
+    </header>
+    <main>
+        <h2>Sobre o curso:</h2>
+        <p>Forma profissionais que analisam, projetam, documentam, especificam, testam, implantam e mantém sistemas computacionais de informação. Este profissional trabalha, também, com ferramentas computacionais, equipamentos de informática e metodologia de projetos na produção de sistemas. 
+            Raciocínio lógico, emprego de linguagens de programação e de metodologias de construção de projetos, preocupação com a qualidade, usabilidade, robustez, integridade e segurança de programas computacionais são fundamentais à atuação deste profissional.</p>
+    </main>
+    <footer>
+        <p>© 2024 IFRN. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

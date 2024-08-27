@@ -1,4 +1,5 @@
 {% extends 'perfil/base.html' %}
+{% load static %}
 
 {% block content %}
 
@@ -19,11 +20,11 @@
         
         <div class="row">
 
-            <div class="col col-8 text-center">
-                <img src="#" alt="Minha foto" class="img-fluid rounded-circle">
+            <div class="col col-6 text-center">
+                <img src="{% static 'image/294695.au2wgCACnJuK.jpg' %}" alt="Minha foto" class="img-fluid rounded-circle">
             </div>
 
-            <div class="col col-4 text-center">
+            <div class="col col-6 text-center">
                 
                 <p class="fs-5">Olá, meu nome é Emanuel e estou atualmente cursando o último 
                 ano do ensino médio no IFRN-PDF. Possuo 19 anos e pretendo me formar em medicina
@@ -41,24 +42,39 @@
 
         <h2 class="text-center">Meus cursos até o atual momento</h2>
 
-        <div class="card" style="width: 18rem;">
-            <img src="#" class="card-img-top" alt="...">
-            <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
+        <div class="row">
+        
+            {% for objeto in list_cursos %}
+
+                <div class="card mx-1 my-2" style="width: 18rem;">
+                    <img src="{{ objeto.image_curso.url }}" class="card-img-top-fluid" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">{{ objeto.nome }}</p>
+                    </div>
+                </div>
+                
+            {% endfor %}
         </div>
 
     </div>
 
+    <!--Hobbies-->
     <div class="container py-5">
 
         <h2 class="text-center">Meus principais hobbies</h2>
 
-        <div class="card" style="width: 18rem;">
-            <img src="#" class="card-img-top" alt="...">
-            <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
+        <div class="row">
+
+            {% for objeto in list_hobbies %}
+
+                <div class="card mx-1 my-2" style="width: 18rem;">
+                    <img src="{{ objeto.image_hobbie.url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">{{ objeto.nome }}</p>
+                    </div>
+                </div>
+                
+            {% endfor %}
         </div>
 
     </div>
